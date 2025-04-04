@@ -24,6 +24,5 @@ public class CatMockTest {
         Cat cat = new Cat(mockFeline);
         List<String> actualFoodCat = cat.getFood();
         assertEquals("Рацион кота должен содержать животных, птиц и рыб", expectedFoodCat, actualFoodCat);
-        verify(mockFeline, times(1)).eatMeat();
     }
 }

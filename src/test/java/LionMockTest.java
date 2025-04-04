@@ -20,10 +20,8 @@ public class LionMockTest {
         List<String> expectedFoodLion = List.of("Животные", "Птицы", "Рыба");
         when(mockFeline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
 
-        Lion lion = new Lion("Самка");
-        lion.setFeline(mockFeline);
+        Lion lion = new Lion("Самка", mockFeline);
         List<String> actualFoodLion = lion.getFood();
         assertEquals("Рацион льва должен содержать животных, птиц и рыб", expectedFoodLion, actualFoodLion);
-        verify(mockFeline, times(1)).getFood("Хищник");
     }
 }

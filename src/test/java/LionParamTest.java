@@ -1,3 +1,4 @@
+import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +28,8 @@ public class LionParamTest {
 
     @Test
     public void checkingForMane() throws Exception {
-        Lion lion = new Lion(sex);
+        Feline feline = new Feline();
+        Lion lion = new Lion(sex, feline);
         boolean actualThatHasMane = lion.doesHaveMane();
         assertEquals("Ожидаемое наличие гривы фактически не подтвердилось", expectedThatHasMane, actualThatHasMane);
     }

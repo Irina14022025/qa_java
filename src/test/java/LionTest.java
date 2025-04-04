@@ -10,8 +10,7 @@ public class LionTest {
     @Test
     public void checkingForKittensLion() throws Exception{
         Feline feline = new Feline();
-        Lion lion = new Lion("Самка");
-        lion.setFeline(feline);
+        Lion lion = new Lion("Самка", feline);
         int actualKittensCount = lion.getKittens();
         assertEquals ("У этой самки должен быть один котенок", expectedKittensCount, actualKittensCount);
     }
