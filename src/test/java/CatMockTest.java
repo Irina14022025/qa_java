@@ -1,6 +1,5 @@
 import com.example.Cat;
 import com.example.Feline;
-import com.example.Predator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -17,7 +16,7 @@ public class CatMockTest {
     private Feline mockFeline;
 
     @Test
-    public void checkingFoodCat() throws Exception {
+    public void checkingFoodCatTest() throws Exception {
         List<String> expectedFoodCat = List.of("Животные", "Птицы", "Рыба");
         when(mockFeline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
 

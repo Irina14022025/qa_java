@@ -12,7 +12,7 @@ public class FelineMockTest {
     private Feline mockFeline;
 
     @Test
-    public void checkingWhichParameter(){
+    public void checkingWhichParameterTest(){
         mockFeline.getKittens(1);
         Mockito.verify(mockFeline).getKittens(1);
     }

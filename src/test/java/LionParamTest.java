@@ -21,13 +21,12 @@ public class LionParamTest {
     public static Object[][] getSexLion() {
         return new Object[][] {
                 { "Самец", true},
-                // { "Не самка", false}, // Проверка обработки исключения
                 { "Самка", false}
         };
     }
 
     @Test
-    public void checkingForMane() throws Exception {
+    public void checkingForManeTest() throws Exception {
         Feline feline = new Feline();
         Lion lion = new Lion(sex, feline);
         boolean actualThatHasMane = lion.doesHaveMane();

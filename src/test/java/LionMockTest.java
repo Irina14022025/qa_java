@@ -16,7 +16,7 @@ public class LionMockTest {
     private Feline mockFeline;
 
     @Test
-    public void checkingFoodLion() throws Exception {
+    public void checkingFoodLionTest() throws Exception {
         List<String> expectedFoodLion = List.of("Животные", "Птицы", "Рыба");
         when(mockFeline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
 

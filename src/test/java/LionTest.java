@@ -8,7 +8,7 @@ public class LionTest {
     private int expectedKittensCount = 1;
 
     @Test
-    public void checkingForKittensLion() throws Exception{
+    public void checkingForKittensLionTest() throws Exception{
         Feline feline = new Feline();
         Lion lion = new Lion("Самка", feline);
         int actualKittensCount = lion.getKittens();

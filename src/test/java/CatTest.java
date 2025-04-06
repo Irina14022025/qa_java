@@ -8,7 +8,7 @@ public class CatTest {
     private String expectedVoiceCat = "Мяу";
 
     @Test
-    public void checkingVoiceCat(){
+    public void checkingVoiceCatTest(){
         Feline feline = new Feline();
         Cat cat = new Cat(feline);
         String actualVoiceCat = cat.getSound();

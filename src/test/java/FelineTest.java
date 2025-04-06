@@ -11,21 +11,21 @@ public class FelineTest {
     private int expectedKittensCount = 1;
 
     @Test
-    public void checkingFoodFeline() throws Exception{
+    public void checkingFoodFelineTest() throws Exception{
         Feline feline = new Feline();
         List<String> actualFoodFeline = feline.eatMeat();
         assertEquals("Рацион кошачьих должен содержать животных, птиц и рыб", expectedFoodFeline, actualFoodFeline);
     }
 
     @Test
-    public void checkingFamily(){
+    public void checkingFamilyTest(){
         Feline feline = new Feline();
         String actualFamily = feline.getFamily();
         assertEquals("Должно быть семейство кошачьих", expectedFamily, actualFamily);
     }
 
     @Test
-    public void checkingForKittensFeline(){
+    public void checkingForKittensFelineTest(){
         Feline feline = new Feline();
         int actualKittensCount = feline.getKittens();
         assertEquals("Котенок должен быть один", expectedKittensCount, actualKittensCount);
